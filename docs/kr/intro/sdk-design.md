@@ -17,7 +17,7 @@ order: 4
 
 `baseapp`은 코스모스 SDK 애플리케이션 구현체 템플릿입니다. 하위 컨센서스 엔진과 연결을 처리하기 위한 구현체가 포함 되어있습니다. 통상, 코스모스 SDK 애플리케이션에서는 [`app.go`](../basics/app-anatomy.md#core-application-file)내에 `baseapp`을 임베딩합니다. 이에 대한 예시는 코스모스 SDK 애플리케이션 튜토리얼을 참고하세요:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/c6754a1e313eb1ed973c5c91dcc606f2fd288811/app.go#L72-L92
++++ https://github.com/evdatsion/sdk-tutorials/blob/c6754a1e313eb1ed973c5c91dcc606f2fd288811/app.go#L72-L92
 
 `baseapp`의 목표는 스토어와 확장 가능한 상태 기계간의 안전한 인터페이스를 제공함과 동시에 상태 기계를 최소한으로 정의하는(ABCI 디자인 목적에 따라) 것입니다.
 

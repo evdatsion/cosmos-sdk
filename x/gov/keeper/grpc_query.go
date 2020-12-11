@@ -6,10 +6,10 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/evdatsion/cosmos-sdk/store/prefix"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/query"
+	"github.com/evdatsion/cosmos-sdk/x/gov/types"
 )
 
 var _ types.QueryServer = Keeper{}

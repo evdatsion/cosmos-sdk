@@ -3,7 +3,7 @@ package mock
 import (
 	"encoding/json"
 
-	"github.com/cosmos/cosmos-sdk/types/module"
+	"github.com/evdatsion/cosmos-sdk/types/module"
 
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 
@@ -12,14 +12,14 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	capabilitykeeper "github.com/evdatsion/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/evdatsion/cosmos-sdk/x/capability/types"
+	channeltypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
 )
 
 const (

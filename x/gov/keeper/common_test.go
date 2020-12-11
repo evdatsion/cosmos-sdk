@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/staking"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/evdatsion/cosmos-sdk/simapp"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/x/gov/types"
+	"github.com/evdatsion/cosmos-sdk/x/staking"
+	stakingkeeper "github.com/evdatsion/cosmos-sdk/x/staking/keeper"
+	stakingtypes "github.com/evdatsion/cosmos-sdk/x/staking/types"
 )
 
 var (

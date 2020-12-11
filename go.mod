@@ -1,6 +1,6 @@
 go 1.15
 
-module github.com/cosmos/cosmos-sdk
+module github.com/evdatsion/cosmos-sdk
 
 require (
 	github.com/99designs/keyring v1.1.6
@@ -10,9 +10,9 @@ require (
 	github.com/btcsuite/btcd v0.21.0-beta
 	github.com/btcsuite/btcutil v1.0.2
 	github.com/confio/ics23/go v0.6.3
-	github.com/cosmos/go-bip39 v1.0.0
-	github.com/cosmos/iavl v0.15.0-rc5
-	github.com/cosmos/ledger-cosmos-go v0.11.1
+	github.com/evdatsion/go-bip39 v1.0.0
+	github.com/evdatsion/iavl v0.15.0-rc5
+	// github.com/evdatsion/ledger-cosmos-go v0.11.1
 	github.com/dgraph-io/ristretto v0.0.3 // indirect
 	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13 // indirect
 	github.com/enigmampc/btcutil v1.0.3-0.20200723161021-e2fb6adb2a25

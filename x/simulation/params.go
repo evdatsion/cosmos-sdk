@@ -9,9 +9,9 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	"github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	"github.com/evdatsion/cosmos-sdk/types/simulation"
+	stakingtypes "github.com/evdatsion/cosmos-sdk/x/staking/types"
 )
 
 const (

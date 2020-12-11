@@ -3,13 +3,13 @@ package keeper
 import (
 	"context"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/types"
 )
 
 var _ types.MsgServer = Keeper{}
 
-// See createOutgoingPacket in spec:https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer#packet-relay
+// See createOutgoingPacket in spec:https://github.com/evdatsion/ics/tree/master/spec/ics-020-fungible-token-transfer#packet-relay
 
 // Transfer defines a rpc handler method for MsgTransfer.
 func (k Keeper) Transfer(goCtx context.Context, msg *types.MsgTransfer) (*types.MsgTransferResponse, error) {

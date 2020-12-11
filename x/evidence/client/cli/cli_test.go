@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	testnet "github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/x/evidence/client/cli"
+	clitestutil "github.com/evdatsion/cosmos-sdk/testutil/cli"
+	testnet "github.com/evdatsion/cosmos-sdk/testutil/network"
+	"github.com/evdatsion/cosmos-sdk/x/evidence/client/cli"
 )
 
 type IntegrationTestSuite struct {

@@ -4,9 +4,9 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	"github.com/evdatsion/cosmos-sdk/types/kv"
+	"github.com/evdatsion/cosmos-sdk/x/mint/types"
 )
 
 // NewDecodeStore returns a decoder function closure that umarshals the KVPair's

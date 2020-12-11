@@ -4,8 +4,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/kv"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
+	"github.com/evdatsion/cosmos-sdk/types/kv"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/types"
 )
 
 // TransferUnmarshaler defines the expected encoding store functions.

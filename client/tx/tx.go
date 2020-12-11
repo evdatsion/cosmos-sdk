@@ -9,18 +9,18 @@ import (
 
 	"github.com/spf13/pflag"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/input"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/client/flags"
+	"github.com/evdatsion/cosmos-sdk/client/input"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	"github.com/evdatsion/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/evdatsion/cosmos-sdk/crypto/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/types/rest"
+	"github.com/evdatsion/cosmos-sdk/types/tx"
+	"github.com/evdatsion/cosmos-sdk/types/tx/signing"
+	authsigning "github.com/evdatsion/cosmos-sdk/x/auth/signing"
 )
 
 // GenerateOrBroadcastTxCLI will either generate and print and unsigned transaction
@@ -294,7 +294,7 @@ func CalculateGas(
 	}
 
 	// TODO This should use the generated tx service Client.
-	// https://github.com/cosmos/cosmos-sdk/issues/7726
+	// https://github.com/evdatsion/cosmos-sdk/issues/7726
 	bz, _, err := queryFunc("/cosmos.tx.v1beta1.Service/Simulate", txBytes)
 	if err != nil {
 		return tx.SimulateResponse{}, 0, err

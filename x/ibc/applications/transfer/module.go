@@ -14,21 +14,21 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/keeper"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/simulation"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	porttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/05-port/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/types/module"
+	simtypes "github.com/evdatsion/cosmos-sdk/types/simulation"
+	capabilitytypes "github.com/evdatsion/cosmos-sdk/x/capability/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/client/cli"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/keeper"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/types"
+	channeltypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/types"
+	porttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/05-port/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
 )
 
 var (
@@ -195,7 +195,7 @@ func ValidateTransferChannelParams(
 	version string,
 ) error {
 	// NOTE: for escrow address security only 2^32 channels are allowed to be created
-	// Issue: https://github.com/cosmos/cosmos-sdk/issues/7737
+	// Issue: https://github.com/evdatsion/cosmos-sdk/issues/7737
 	channelSequence, err := channeltypes.ParseChannelSequence(channelID)
 	if err != nil {
 		return err

@@ -47,7 +47,7 @@ The `main.go` file needs to have a `main()` function that does the following to 
 
 See an example of `main()` function from the `nameservice` application:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L23-L66
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L23-L66
 
 The rest of the document will detail what needs to be implemented for each step and include smaller portions of code from the nameservice CLI `main.go` file.
 
@@ -60,15 +60,15 @@ Every application CLI first constructs a root command, then adds functionality b
 The root command (called `rootCmd`) is what the user first types into the command line to indicate which application they wish to interact with. The string used to invoke the command (the "Use" field) is typically the name of the application suffixed with `-cli`, e.g. `appcli`. The root command typically includes the following commands to support basic functionality in the application.
 
 * **Status** command from the SDK rpc client tools, which prints information about the status of the connected [`Node`](../core/node.md). The Status of a node includes `NodeInfo`,`SyncInfo` and `ValidatorInfo`.
-* **Config** [command](https://github.com/cosmos/cosmos-sdk/blob/master/client/config.go) from the SDK client tools, which allows the user to edit a `config.toml` file that sets values for [flags](#flags) such as `--chain-id` and which `--node` they wish to connect to.
+* **Config** [command](https://github.com/evdatsion/cosmos-sdk/blob/master/client/config.go) from the SDK client tools, which allows the user to edit a `config.toml` file that sets values for [flags](#flags) such as `--chain-id` and which `--node` they wish to connect to.
 The `config` command can be invoked by typing `appcli config` with optional arguments `<key> [value]` and a `--get` flag to query configurations or `--home` flag to create a new configuration.
-* **Keys** [commands](https://github.com/cosmos/cosmos-sdk/blob/master/client/keys) from the SDK client tools, which includes a collection of subcommands for using the key functions in the SDK crypto tools, including adding a new key and saving it to disk, listing all public keys stored in the key manager, and deleting a key. For example, users can type `appcli keys add <name>` to add a new key and save an encrypted copy to disk, using the flag `--recover` to recover a private key from a seed phrase or the flag `--multisig` to group multiple keys together to create a multisig key. For full details on the `add` key command, see the code [here](https://github.com/cosmos/cosmos-sdk/blob/master/client/keys/add.go). For more details about usage of `--keyring-backend` for storage of key credentials look at the [keyring docs](/keyring.md).
+* **Keys** [commands](https://github.com/evdatsion/cosmos-sdk/blob/master/client/keys) from the SDK client tools, which includes a collection of subcommands for using the key functions in the SDK crypto tools, including adding a new key and saving it to disk, listing all public keys stored in the key manager, and deleting a key. For example, users can type `appcli keys add <name>` to add a new key and save an encrypted copy to disk, using the flag `--recover` to recover a private key from a seed phrase or the flag `--multisig` to group multiple keys together to create a multisig key. For full details on the `add` key command, see the code [here](https://github.com/evdatsion/cosmos-sdk/blob/master/client/keys/add.go). For more details about usage of `--keyring-backend` for storage of key credentials look at the [keyring docs](/keyring.md).
 * [**Transaction**](#transaction-commands) commands.
 * [**Query**](#query-commands) commands.
 
 Next is an example `main()` function from the `nameservice` application. It instantiates the root command, adds a [*persistent* flag](#flags) and `PreRun` function to be run before every execution, and adds all of the necessary subcommands.
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L23-L66
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L23-L66
 
 The root-level `status`, `config`, and `keys` subcommands are common across most applications and do not interact with application state. The bulk of an application's functionality - what users can actually *do* with it - is enabled by its transaction commands.
 
@@ -76,25 +76,25 @@ The root-level `status`, `config`, and `keys` subcommands are common across most
 
 [Transactions](#./transactions.md) are objects wrapping [messages](../building-modules/messages-and-queries.md#messages) that trigger state changes. To enable the creation of transactions using the CLI interface, a function `txCmd` is generally added to the `rootCmd`:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L51
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L51
 
 This `txCmd` function adds all the transaction available to end-users for the application. This typically includes:
 
-* **Sign command** from the [`auth`](https://github.com/cosmos/cosmos-sdk/tree/master/x/auth/spec) module that signs messages in a transaction. To enable multisig, add the `auth` module's `MultiSign` command. Since every transaction requires some sort of signature in order to be valid, thithe signing command is necessary for every application.
+* **Sign command** from the [`auth`](https://github.com/evdatsion/cosmos-sdk/tree/master/x/auth/spec) module that signs messages in a transaction. To enable multisig, add the `auth` module's `MultiSign` command. Since every transaction requires some sort of signature in order to be valid, thithe signing command is necessary for every application.
 * **Broadcast command** from the SDK client tools, to broadcast transactions.
-* **Send command** from the [`bank`](https://github.com/cosmos/cosmos-sdk/tree/master/x/bank/spec) module, which is a transaction that allows accounts to send coins to one another, including gas and fees for transactions.
+* **Send command** from the [`bank`](https://github.com/evdatsion/cosmos-sdk/tree/master/x/bank/spec) module, which is a transaction that allows accounts to send coins to one another, including gas and fees for transactions.
 * **All [module transaction commands](../building-modules/module-interfaces.md#transaction-commands)** the application is dependent on, retrieved by using the [basic module manager's](../building-modules/module-manager.md#basic-manager) `AddTxCommands()` function.
 
 Here is an example of a `txCmd` aggregating these subcommands from the `nameservice` application:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L97-L118
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L97-L118
 
 
 ### Query Commands
 
 [**Queries**](../building-modules/messages-and-queries.md#queries) are objects that allow users to retrieve information about the application's state. To enable the creation of transactions using the CLI interface, a function `txCmd` is generally added to the `rootCmd`:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L50
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L50
 
 This `queryCmd` function adds all the queries available to end-users for the application. This typically includes:
 
@@ -106,7 +106,7 @@ This `queryCmd` function adds all the queries available to end-users for the app
 
 Here is an example of a `queryCmd` aggregating subcommands from the `nameservice` application:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L74-L95
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L74-L95
 
 ## Flags
 
@@ -116,7 +116,7 @@ A *persistent* flag (as opposed to a _local_ flag) added to a command transcends
 
 Flags are added to commands directly (generally in the [module's CLI file](../building-modules/module-interfaces.md#flags) where module commands are defined) and no flag except for the `rootCmd` persistent flags has to be added at application level. It is common to add a _persistent_ flag for `--chain-id`, the unique identifier of the blockchain the application pertains to, to the root command. Adding this flag can be done in the `main()` function. Adding this flag makes sense as the chain ID should not be changing across commands in this application CLI. Here is an example from the `nameservice` application:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L41
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L41
 
 
 ## Configurations
@@ -129,8 +129,8 @@ The last function to define in `main.go` is `initConfig`, which does exactly wha
 
 Here is an example of an `initConfig()` function from the [nameservice tutorial CLI](https://cosmos.network/docs/tutorial/entrypoint.html#nscli):
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L120-L141
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L120-L141
 
 And an example of how to add `initConfig` as a `PersistentPreRunE` to the root command:
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L42-L44
++++ https://github.com/evdatsion/sdk-tutorials/blob/86a27321cf89cc637581762e953d0c07f8c78ece/nameservice/cmd/nscli/main.go#L42-L44

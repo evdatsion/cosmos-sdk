@@ -5,10 +5,10 @@ import (
 
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	cryptotypes "github.com/evdatsion/cosmos-sdk/crypto/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/x/slashing/types"
 )
 
 // Keeper of the slashing store

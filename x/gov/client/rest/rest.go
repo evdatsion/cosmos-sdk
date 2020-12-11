@@ -5,10 +5,10 @@ import (
 
 	"github.com/gorilla/mux"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	clientrest "github.com/cosmos/cosmos-sdk/client/rest"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
+	"github.com/evdatsion/cosmos-sdk/client"
+	clientrest "github.com/evdatsion/cosmos-sdk/client/rest"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/rest"
 )
 
 // REST Variable names

@@ -3,13 +3,13 @@ package rest
 import (
 	"net/http"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	govrest "github.com/cosmos/cosmos-sdk/x/gov/client/rest"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	paramscutils "github.com/cosmos/cosmos-sdk/x/params/client/utils"
-	"github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/client/tx"
+	"github.com/evdatsion/cosmos-sdk/types/rest"
+	govrest "github.com/evdatsion/cosmos-sdk/x/gov/client/rest"
+	govtypes "github.com/evdatsion/cosmos-sdk/x/gov/types"
+	paramscutils "github.com/evdatsion/cosmos-sdk/x/params/client/utils"
+	"github.com/evdatsion/cosmos-sdk/x/params/types/proposal"
 )
 
 // ProposalRESTHandler returns a ProposalRESTHandler that exposes the param

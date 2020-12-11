@@ -14,12 +14,12 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	pagination "github.com/cosmos/cosmos-sdk/types/query"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	pagination "github.com/evdatsion/cosmos-sdk/types/query"
+	txtypes "github.com/evdatsion/cosmos-sdk/types/tx"
 )
 
 // baseAppSimulateFn is the signature of the Baseapp#Simulate function.
@@ -154,7 +154,7 @@ func (s txServer) GetTx(ctx context.Context, req *txtypes.GetTxRequest) (*txtype
 	}
 
 	// TODO We should also check the proof flag in gRPC header.
-	// https://github.com/cosmos/cosmos-sdk/issues/7036.
+	// https://github.com/evdatsion/cosmos-sdk/issues/7036.
 	result, err := s.clientCtx.Client.Tx(ctx, hash, false)
 	if err != nil {
 		return nil, err

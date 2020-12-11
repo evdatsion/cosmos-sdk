@@ -3,13 +3,13 @@ package keeper_test
 import (
 	"fmt"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	connectiontypes "github.com/cosmos/cosmos-sdk/x/ibc/core/03-connection/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/query"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	connectiontypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/03-connection/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	ibctesting "github.com/evdatsion/cosmos-sdk/x/ibc/testing"
 )
 
 func (suite *KeeperTestSuite) TestQueryChannel() {

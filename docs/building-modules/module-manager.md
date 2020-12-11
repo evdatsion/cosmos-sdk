@@ -29,7 +29,7 @@ are only used for genesis can take advantage of the `Module` patterns without ha
 
 The `AppModuleBasic` interface defines the independent methods modules need to implement.
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L49-L63
++++ https://github.com/evdatsion/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L49-L63
 
 Let us go through the methods:
 
@@ -49,7 +49,7 @@ All the `AppModuleBasic` of an application are managed by the [`BasicManager`](#
 
 The `AppModuleGenesis` interface is a simple embedding of the `AppModuleBasic` interface with two added methods.
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L152-L158
++++ https://github.com/evdatsion/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L152-L158
 
 Let us go through the two added methods:
 
@@ -62,7 +62,7 @@ It does not have its own manager, and exists separately from [`AppModule`](#appm
 
 The `AppModule` interface defines the inter-dependent methods modules need to implement.
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/b4cce159bcc6a32ac78245c6866dd87c73f3720d/types/module/module.go#L160-L182
++++ https://github.com/evdatsion/cosmos-sdk/blob/b4cce159bcc6a32ac78245c6866dd87c73f3720d/types/module/module.go#L160-L182
 
 `AppModule`s are managed by the [module manager](#manager). This interface embeds the `AppModuleGenesis` interface so that the manager can access all the independent and genesis inter-dependent methods of the module. This means that a concrete type implementing the `AppModule` interface must either implement all the methods of `AppModuleGenesis` (and by extension `AppModuleBasic`), or include a concrete type that does as parameter.
 
@@ -106,11 +106,11 @@ Module managers are used to manage collections of `AppModuleBasic` and `AppModul
 
 The `BasicManager` is a structure that lists all the `AppModuleBasic` of an application:
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L65-L66
++++ https://github.com/evdatsion/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L65-L66
 
 It implements the following methods:
 
-- `NewBasicManager(modules ...AppModuleBasic)`: Constructor function. It takes a list of the application's `AppModuleBasic` and builds a new `BasicManager`. This function is generally called in the `init()` function of [`app.go`](../basics/app-anatomy.md#core-application-file) to quickly initialize the independent elements of the application's modules (click [here](https://github.com/cosmos/gaia/blob/master/app/app.go#L59-L74) to see an example).
+- `NewBasicManager(modules ...AppModuleBasic)`: Constructor function. It takes a list of the application's `AppModuleBasic` and builds a new `BasicManager`. This function is generally called in the `init()` function of [`app.go`](../basics/app-anatomy.md#core-application-file) to quickly initialize the independent elements of the application's modules (click [here](https://github.com/evdatsion/gaia/blob/master/app/app.go#L59-L74) to see an example).
 - `RegisterLegacyAminoCodec(cdc *codec.LegacyAmino)`: Registers the [`codec.LegacyAmino`s](../core/encoding.md#amino) of each of the application's `AppModuleBasic`. This function is usually called early on in the [application's construction](../basics/app-anatomy.md#constructor).
 - `RegisterInterfaces(registry codectypes.InterfaceRegistry)`: Registers interface types and implementations of each of the application's `AppModuleBasic`.
 - `DefaultGenesis(cdc codec.JSONMarshaler)`: Provides default genesis information for modules in the application by calling the [`DefaultGenesis(cdc codec.JSONMarshaler)`](./genesis.md#defaultgenesis) function of each module. It is used to construct a default genesis file for the application.
@@ -124,7 +124,7 @@ It implements the following methods:
 
 The `Manager` is a structure that holds all the `AppModule` of an application, and defines the order of execution between several key components of these modules:
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L223-L231
++++ https://github.com/evdatsion/cosmos-sdk/blob/325be6ff215db457c6fc7668109640cd7fdac461/types/module/module.go#L223-L231
 
 The module manager is used throughout the application whenever an action on a collection of modules is required. It implements the following methods:
 
@@ -143,7 +143,7 @@ The module manager is used throughout the application whenever an action on a co
 
 Here's an example of a concrete integration within an application:
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/2323f1ac0e9a69a0da6b43693061036134193464/simapp/app.go#L315-L362
++++ https://github.com/evdatsion/cosmos-sdk/blob/2323f1ac0e9a69a0da6b43693061036134193464/simapp/app.go#L315-L362
 
 ## Next {hide}
 

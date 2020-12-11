@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"math/rand"
 
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	"github.com/cosmos/cosmos-sdk/x/simulation"
+	simtypes "github.com/evdatsion/cosmos-sdk/types/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/auth/types"
+	"github.com/evdatsion/cosmos-sdk/x/simulation"
 )
 
 const (

@@ -6,12 +6,12 @@ import (
 	gogotypes "github.com/gogo/protobuf/types"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/auth/types"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	cryptotypes "github.com/evdatsion/cosmos-sdk/crypto/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/x/auth/types"
+	paramtypes "github.com/evdatsion/cosmos-sdk/x/params/types"
 )
 
 // AccountKeeperI is the interface contract that x/auth's keeper implements.

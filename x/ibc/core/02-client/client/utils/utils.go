@@ -5,16 +5,16 @@ import (
 
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/client"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	ibcclient "github.com/cosmos/cosmos-sdk/x/ibc/core/client"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	ibctmtypes "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	commitmenttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/23-commitment/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
+	ibcclient "github.com/evdatsion/cosmos-sdk/x/ibc/core/client"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	ibctmtypes "github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
 )
 
 // QueryClientState returns a client state. If prove is true, it performs an ABCI store query

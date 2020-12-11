@@ -13,7 +13,7 @@ This paper defines the implementation of the IBC protocol on the Cosmos SDK, the
 changes made to the specification and where to find each specific ICS spec within
 the module.
 
-For the general specification please refer to the [Interchain Standards](https://github.com/cosmos/ics).
+For the general specification please refer to the [Interchain Standards](https://github.com/evdatsion/ics).
 
 ## Contents
 

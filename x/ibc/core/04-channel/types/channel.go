@@ -3,10 +3,10 @@ package types
 import (
 	"strings"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
 )
 
 var (

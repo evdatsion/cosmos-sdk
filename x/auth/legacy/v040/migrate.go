@@ -1,12 +1,12 @@
 package v040
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	v039auth "github.com/cosmos/cosmos-sdk/x/auth/legacy/v039"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	v040auth "github.com/cosmos/cosmos-sdk/x/auth/types"
-	v040vesting "github.com/cosmos/cosmos-sdk/x/auth/vesting/types"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	v039auth "github.com/evdatsion/cosmos-sdk/x/auth/legacy/v039"
+	"github.com/evdatsion/cosmos-sdk/x/auth/tx"
+	v040auth "github.com/evdatsion/cosmos-sdk/x/auth/types"
+	v040vesting "github.com/evdatsion/cosmos-sdk/x/auth/vesting/types"
 )
 
 // convertBaseAccount converts a 0.39 BaseAccount to a 0.40 BaseAccount.

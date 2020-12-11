@@ -8,10 +8,10 @@ import (
 	"math/rand"
 	"time"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	"github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/module"
+	"github.com/evdatsion/cosmos-sdk/types/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/gov/types"
 )
 
 // Simulation parameter constants

@@ -8,18 +8,18 @@ import (
 	"time"
 
 	ics23 "github.com/confio/ics23/go"
-	"github.com/cosmos/iavl"
+	"github.com/evdatsion/iavl"
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmcrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/store/cachekv"
-	"github.com/cosmos/cosmos-sdk/store/tracekv"
-	"github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/evdatsion/cosmos-sdk/store/cachekv"
+	"github.com/evdatsion/cosmos-sdk/store/tracekv"
+	"github.com/evdatsion/cosmos-sdk/store/types"
+	"github.com/evdatsion/cosmos-sdk/telemetry"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/types/kv"
 )
 
 const (

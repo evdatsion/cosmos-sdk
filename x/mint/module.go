@@ -11,17 +11,17 @@ import (
 	"github.com/spf13/cobra"
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mint/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/mint/client/rest"
-	"github.com/cosmos/cosmos-sdk/x/mint/keeper"
-	"github.com/cosmos/cosmos-sdk/x/mint/simulation"
-	"github.com/cosmos/cosmos-sdk/x/mint/types"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	cdctypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/module"
+	simtypes "github.com/evdatsion/cosmos-sdk/types/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/mint/client/cli"
+	"github.com/evdatsion/cosmos-sdk/x/mint/client/rest"
+	"github.com/evdatsion/cosmos-sdk/x/mint/keeper"
+	"github.com/evdatsion/cosmos-sdk/x/mint/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/mint/types"
 )
 
 var (

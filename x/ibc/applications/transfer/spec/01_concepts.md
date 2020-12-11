@@ -6,7 +6,7 @@ order: 1
 
 ## Acknowledgements
 
-ICS20 uses the recommended acknowledgement format as specified by [ICS 04](https://github.com/cosmos/ics/tree/master/spec/ics-004-channel-and-packet-semantics#acknowledgement-envelope).
+ICS20 uses the recommended acknowledgement format as specified by [ICS 04](https://github.com/evdatsion/ics/tree/master/spec/ics-004-channel-and-packet-semantics#acknowledgement-envelope).
 
 A successful receive of a transfer packet will result in a Result Acknowledgement being written
 with the value `[]byte(byte(1))` in the `Response` field.
@@ -87,7 +87,7 @@ Thus the proposed solution for clients that the IBC team recommends are the foll
   running light clients. If the proofs are not verified, they should be considered as trusted third
   parties services. Additionally, client would be advised in the future to use RaaS that support the
   largest number of connections between chains in the ecosystem. Unfortunately, none of the existing
-  public relayers (in [Golang](https://github.com/cosmos/relayer) and
+  public relayers (in [Golang](https://github.com/evdatsion/relayer) and
   [Rust](https://github.com/informalsystems/ibc-rs)), provide this service to clients.
 
 ::: tip

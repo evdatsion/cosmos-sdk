@@ -10,7 +10,7 @@ messages from the upgrade module indicating a pending or required upgrade and ac
 
 Run:
 
-`go get github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor`
+`go get github.com/evdatsion/cosmos-sdk/cosmovisor/cmd/cosmovisor`
 
 ## Command Line Arguments And Environment Variables
 

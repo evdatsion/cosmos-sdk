@@ -6,13 +6,13 @@ import (
 
 	"github.com/armon/go-metrics"
 
-	"github.com/cosmos/cosmos-sdk/telemetry"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/telemetry"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/types"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	channeltypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
 )
 
 // SendTransfer handles transfer sending logic. There are 2 possible cases:
@@ -80,7 +80,7 @@ func (k Keeper) SendTransfer(
 	}
 
 	// begin createOutgoingPacket logic
-	// See spec for this logic: https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer#packet-relay
+	// See spec for this logic: https://github.com/evdatsion/ics/tree/master/spec/ics-020-fungible-token-transfer#packet-relay
 	channelCap, ok := k.scopedKeeper.GetCapability(ctx, host.ChannelCapabilityPath(sourcePort, sourceChannel))
 	if !ok {
 		return sdkerrors.Wrap(channeltypes.ErrChannelCapabilityNotFound, "module does not own channel capability")

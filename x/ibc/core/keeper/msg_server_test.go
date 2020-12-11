@@ -5,17 +5,17 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/keeper"
-	ibctmtypes "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
-	ibcmock "github.com/cosmos/cosmos-sdk/x/ibc/testing/mock"
-	upgradetypes "github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	channeltypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/types"
+	commitmenttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/23-commitment/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/keeper"
+	ibctmtypes "github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	ibctesting "github.com/evdatsion/cosmos-sdk/x/ibc/testing"
+	ibcmock "github.com/evdatsion/cosmos-sdk/x/ibc/testing/mock"
+	upgradetypes "github.com/evdatsion/cosmos-sdk/x/upgrade/types"
 )
 
 const height = 10

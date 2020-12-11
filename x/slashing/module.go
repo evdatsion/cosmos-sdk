@@ -13,18 +13,18 @@ import (
 
 	abci "github.com/tendermint/tendermint/abci/types"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/codec"
-	cdctypes "github.com/cosmos/cosmos-sdk/codec/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/client/cli"
-	"github.com/cosmos/cosmos-sdk/x/slashing/client/rest"
-	"github.com/cosmos/cosmos-sdk/x/slashing/keeper"
-	"github.com/cosmos/cosmos-sdk/x/slashing/simulation"
-	"github.com/cosmos/cosmos-sdk/x/slashing/types"
-	stakingkeeper "github.com/cosmos/cosmos-sdk/x/staking/keeper"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	cdctypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/module"
+	simtypes "github.com/evdatsion/cosmos-sdk/types/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/slashing/client/cli"
+	"github.com/evdatsion/cosmos-sdk/x/slashing/client/rest"
+	"github.com/evdatsion/cosmos-sdk/x/slashing/keeper"
+	"github.com/evdatsion/cosmos-sdk/x/slashing/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/slashing/types"
+	stakingkeeper "github.com/evdatsion/cosmos-sdk/x/staking/keeper"
 )
 
 var (

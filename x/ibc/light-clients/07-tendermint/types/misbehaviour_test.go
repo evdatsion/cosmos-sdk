@@ -7,11 +7,11 @@ import (
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	tmtypes "github.com/tendermint/tendermint/types"
 
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	"github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
-	ibctestingmock "github.com/cosmos/cosmos-sdk/x/ibc/testing/mock"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	ibctesting "github.com/evdatsion/cosmos-sdk/x/ibc/testing"
+	ibctestingmock "github.com/evdatsion/cosmos-sdk/x/ibc/testing/mock"
 )
 
 func (suite *TendermintTestSuite) TestMisbehaviour() {

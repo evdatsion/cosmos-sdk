@@ -8,15 +8,15 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	store "github.com/cosmos/cosmos-sdk/store/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	ibcexported "github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	ibctmtypes "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
-	"github.com/cosmos/cosmos-sdk/x/upgrade/keeper"
-	"github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	"github.com/evdatsion/cosmos-sdk/simapp"
+	store "github.com/evdatsion/cosmos-sdk/store/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	commitmenttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/23-commitment/types"
+	ibcexported "github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	ibctmtypes "github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	"github.com/evdatsion/cosmos-sdk/x/upgrade/keeper"
+	"github.com/evdatsion/cosmos-sdk/x/upgrade/types"
 )
 
 type KeeperTestSuite struct {

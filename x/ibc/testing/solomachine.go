@@ -5,18 +5,18 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	kmultisig "github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	"github.com/cosmos/cosmos-sdk/crypto/types/multisig"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	solomachinetypes "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/06-solomachine/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	kmultisig "github.com/evdatsion/cosmos-sdk/crypto/keys/multisig"
+	"github.com/evdatsion/cosmos-sdk/crypto/keys/secp256k1"
+	cryptotypes "github.com/evdatsion/cosmos-sdk/crypto/types"
+	"github.com/evdatsion/cosmos-sdk/crypto/types/multisig"
+	"github.com/evdatsion/cosmos-sdk/types/tx/signing"
+	"github.com/evdatsion/cosmos-sdk/x/auth/tx"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	commitmenttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/23-commitment/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	solomachinetypes "github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/06-solomachine/types"
 )
 
 var prefix = commitmenttypes.NewMerklePrefix([]byte("ibc"))

@@ -3,7 +3,7 @@ package types
 import (
 	"github.com/gogo/protobuf/proto"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
 )
 
 type Any struct {
@@ -102,7 +102,7 @@ func UnsafePackAny(x interface{}) *Any {
 
 // PackAny is a checked and safe version of UnsafePackAny. It assures that
 // `x` implements the proto.Message interface and uses it to serialize `x`.
-// [DEPRECATED]: should be moved away: https://github.com/cosmos/cosmos-sdk/issues/7479
+// [DEPRECATED]: should be moved away: https://github.com/evdatsion/cosmos-sdk/issues/7479
 func PackAny(x interface{}) (*Any, error) {
 	if x == nil {
 		return nil, nil

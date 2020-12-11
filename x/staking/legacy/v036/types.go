@@ -5,10 +5,10 @@ package v036
 import (
 	"time"
 
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	v034staking "github.com/cosmos/cosmos-sdk/x/staking/legacy/v034"
+	"github.com/evdatsion/cosmos-sdk/codec/legacy"
+	cryptotypes "github.com/evdatsion/cosmos-sdk/crypto/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	v034staking "github.com/evdatsion/cosmos-sdk/x/staking/legacy/v034"
 )
 
 const (

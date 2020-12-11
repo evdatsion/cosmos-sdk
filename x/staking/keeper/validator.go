@@ -6,8 +6,8 @@ import (
 
 	gogotypes "github.com/gogo/protobuf/types"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/staking/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/x/staking/types"
 )
 
 // Cache the amino decoding of validators, as it can be the case that repeated slashing calls

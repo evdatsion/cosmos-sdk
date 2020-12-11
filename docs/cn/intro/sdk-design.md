@@ -13,7 +13,7 @@ Cosmos SDK 是一个框架，可以促进基于 Tendermint 的安全状态机的
 
 `baseapp` 是 Cosmos SDK 应用程序的样本实现，它拥有能够处理和底层共识引擎的连接的 ABCI 实现。通常，Cosmos SDK 应用程序通过嵌入[`app.go`](https://docs.cosmos.network/master/basics/app-anatomy.html#core-application-file)来实现拓展。查看示例请参考 SDK 应用教程：
 
-+++ https://github.com/cosmos/sdk-tutorials/blob/c6754a1e313eb1ed973c5c91dcc606f2fd288811/app.go
++++ https://github.com/evdatsion/sdk-tutorials/blob/c6754a1e313eb1ed973c5c91dcc606f2fd288811/app.go
 
 `baseapp` 的目标是在存储和可拓展状态机之间提供安全的接口，同时尽可能少地定义状态机（对 ABCI 保持不变）。
 

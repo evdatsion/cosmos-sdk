@@ -7,9 +7,9 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/baseapp"
-	"github.com/cosmos/cosmos-sdk/client/grpc/reflection"
-	"github.com/cosmos/cosmos-sdk/simapp"
+	"github.com/evdatsion/cosmos-sdk/baseapp"
+	"github.com/evdatsion/cosmos-sdk/client/grpc/reflection"
+	"github.com/evdatsion/cosmos-sdk/simapp"
 )
 
 type IntegrationTestSuite struct {

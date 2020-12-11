@@ -1,7 +1,7 @@
 package types
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
 )
 
 // NewQueryClientStateResponse creates a new QueryClientStateResponse instance.

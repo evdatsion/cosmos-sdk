@@ -7,26 +7,26 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keyring"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	"github.com/cosmos/cosmos-sdk/testutil/testdata"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	txtypes "github.com/cosmos/cosmos-sdk/types/tx"
-	"github.com/cosmos/cosmos-sdk/types/tx/signing"
-	authclient "github.com/cosmos/cosmos-sdk/x/auth/client"
-	authcli "github.com/cosmos/cosmos-sdk/x/auth/client/cli"
-	authrest "github.com/cosmos/cosmos-sdk/x/auth/client/rest"
-	"github.com/cosmos/cosmos-sdk/x/auth/legacy/legacytx"
-	bankcli "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
-	ibccli "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/client/cli"
-	ibcsolomachinecli "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/06-solomachine/client/cli"
+	"github.com/evdatsion/cosmos-sdk/client/flags"
+	"github.com/evdatsion/cosmos-sdk/client/tx"
+	"github.com/evdatsion/cosmos-sdk/crypto/hd"
+	"github.com/evdatsion/cosmos-sdk/crypto/keyring"
+	"github.com/evdatsion/cosmos-sdk/testutil"
+	clitestutil "github.com/evdatsion/cosmos-sdk/testutil/cli"
+	"github.com/evdatsion/cosmos-sdk/testutil/network"
+	"github.com/evdatsion/cosmos-sdk/testutil/testdata"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/rest"
+	txtypes "github.com/evdatsion/cosmos-sdk/types/tx"
+	"github.com/evdatsion/cosmos-sdk/types/tx/signing"
+	authclient "github.com/evdatsion/cosmos-sdk/x/auth/client"
+	authcli "github.com/evdatsion/cosmos-sdk/x/auth/client/cli"
+	authrest "github.com/evdatsion/cosmos-sdk/x/auth/client/rest"
+	"github.com/evdatsion/cosmos-sdk/x/auth/legacy/legacytx"
+	bankcli "github.com/evdatsion/cosmos-sdk/x/bank/client/testutil"
+	"github.com/evdatsion/cosmos-sdk/x/bank/types"
+	ibccli "github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/client/cli"
+	ibcsolomachinecli "github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/06-solomachine/client/cli"
 )
 
 type IntegrationTestSuite struct {
@@ -86,7 +86,7 @@ func mkStdTx() legacytx.StdTx {
 
 // Create an IBC tx that's encoded as amino-JSON. Since we can't amino-marshal
 // a tx with "cosmos-sdk/MsgTransfer" using the SDK, we just hardcode the tx
-// here. But external clients might, see https://github.com/cosmos/cosmos-sdk/issues/8022.
+// here. But external clients might, see https://github.com/evdatsion/cosmos-sdk/issues/8022.
 func mkIBCStdTx() []byte {
 	ibcTx := `{
 		"account_number": "68",

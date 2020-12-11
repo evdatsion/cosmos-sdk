@@ -4,7 +4,7 @@ import (
 	"regexp"
 	"strings"
 
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
 )
 
 // DefaultMaxCharacterLength defines the default maximum character length used
@@ -27,7 +27,7 @@ var IsValidID = regexp.MustCompile(`^[a-zA-Z0-9\.\_\+\-\#\[\]\<\>]+$`).MatchStri
 //
 // This file defines ValidateFn to validate identifier and path strings
 // The spec for ICS 024 can be located here:
-// https://github.com/cosmos/ics/tree/master/spec/ics-024-host-requirements
+// https://github.com/evdatsion/ics/tree/master/spec/ics-024-host-requirements
 
 // ValidateFn function type to validate path and identifier bytestrings
 type ValidateFn func(string) error

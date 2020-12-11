@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/evdatsion/cosmos-sdk/simapp"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/types/query"
+	"github.com/evdatsion/cosmos-sdk/x/gov/types"
 )
 
 func (suite *KeeperTestSuite) TestGRPCQueryProposal() {

@@ -5,13 +5,13 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/cosmos/iavl"
+	"github.com/evdatsion/iavl"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/cosmos/cosmos-sdk/store/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	"github.com/evdatsion/cosmos-sdk/store/types"
+	"github.com/evdatsion/cosmos-sdk/types/kv"
 )
 
 var (

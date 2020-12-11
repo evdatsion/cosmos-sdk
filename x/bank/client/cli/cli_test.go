@@ -9,16 +9,16 @@ import (
 	"github.com/stretchr/testify/suite"
 	tmcli "github.com/tendermint/tendermint/libs/cli"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	"github.com/cosmos/cosmos-sdk/types/query"
-	"github.com/cosmos/cosmos-sdk/x/bank/client/cli"
-	banktestutil "github.com/cosmos/cosmos-sdk/x/bank/client/testutil"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/client/flags"
+	clitestutil "github.com/evdatsion/cosmos-sdk/testutil/cli"
+	"github.com/evdatsion/cosmos-sdk/testutil/network"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/types/query"
+	"github.com/evdatsion/cosmos-sdk/x/bank/client/cli"
+	banktestutil "github.com/evdatsion/cosmos-sdk/x/bank/client/testutil"
+	"github.com/evdatsion/cosmos-sdk/x/bank/types"
 )
 
 type IntegrationTestSuite struct {

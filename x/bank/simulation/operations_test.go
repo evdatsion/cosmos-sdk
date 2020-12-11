@@ -8,12 +8,12 @@ import (
 	abci "github.com/tendermint/tendermint/abci/types"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
-	"github.com/cosmos/cosmos-sdk/simapp"
-	simappparams "github.com/cosmos/cosmos-sdk/simapp/params"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/bank/simulation"
-	"github.com/cosmos/cosmos-sdk/x/bank/types"
+	"github.com/evdatsion/cosmos-sdk/simapp"
+	simappparams "github.com/evdatsion/cosmos-sdk/simapp/params"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	simtypes "github.com/evdatsion/cosmos-sdk/types/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/bank/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/bank/types"
 )
 
 type SimTestSuite struct {

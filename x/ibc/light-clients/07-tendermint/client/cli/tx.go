@@ -12,14 +12,14 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/tendermint/tendermint/light"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/version"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	commitmenttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/23-commitment/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/client/flags"
+	"github.com/evdatsion/cosmos-sdk/client/tx"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	"github.com/evdatsion/cosmos-sdk/version"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	commitmenttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/23-commitment/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
 )
 
 const (
@@ -31,7 +31,7 @@ const (
 )
 
 // NewCreateClientCmd defines the command to create a new IBC Client as defined
-// in https://github.com/cosmos/ics/tree/master/spec/ics-002-client-semantics#create
+// in https://github.com/evdatsion/ics/tree/master/spec/ics-002-client-semantics#create
 func NewCreateClientCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "create [path/to/consensus_state.json] [trusting_period] [unbonding_period] [max_clock_drift]",
@@ -159,7 +159,7 @@ func NewCreateClientCmd() *cobra.Command {
 }
 
 // NewUpdateClientCmd defines the command to update a client as defined in
-// https://github.com/cosmos/ics/tree/master/spec/ics-002-client-semantics#update
+// https://github.com/evdatsion/ics/tree/master/spec/ics-002-client-semantics#update
 func NewUpdateClientCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "update [client-id] [path/to/header.json]",
@@ -213,7 +213,7 @@ func NewUpdateClientCmd() *cobra.Command {
 
 // NewSubmitMisbehaviourCmd defines the command to submit a misbehaviour to invalidate
 // previous state roots and prevent future updates as defined in
-// https://github.com/cosmos/ics/tree/master/spec/ics-002-client-semantics#misbehaviour
+// https://github.com/evdatsion/ics/tree/master/spec/ics-002-client-semantics#misbehaviour
 func NewSubmitMisbehaviourCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "misbehaviour [path/to/misbehaviour.json]",

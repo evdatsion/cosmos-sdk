@@ -112,7 +112,7 @@ The SDK `codec.Marshaler` interface provides support methods `MarshalInterface` 
 
 Module should register interfaces using `InterfaceRegistry` which provides a mechanism for registering interfaces: `RegisterInterface(protoName string, iface interface{})` and implementations: `RegisterImplementations(iface interface{}, impls ...proto.Message)` that can be safely unpacked from Any, similarly to type registration with Amino:
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/3d969a1ffdf9a80f9ee16db9c16b8a8aa1004af6/codec/types/interface_registry.go#L23-L52
++++ https://github.com/evdatsion/cosmos-sdk/blob/3d969a1ffdf9a80f9ee16db9c16b8a8aa1004af6/codec/types/interface_registry.go#L23-L52
 
 In addition, an `UnpackInterfaces` phase should be introduced to deserialization to unpack interfaces before they're needed. Protobuf types that contain a protobuf `Any` either directly or via one of their members should implement the `UnpackInterfacesMessage` interface:
 
@@ -139,13 +139,13 @@ other peers. Since the underlying consensus engine is agnostic to the applicatio
 it only accepts transactions in the form of raw bytes. The encoding is done by an
 object called `TxEncoder` and the decoding by an object called `TxDecoder`.
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/9ae17669d6715a84c20d52e10e2232be9f467360/types/tx_msg.go#L82-L86
++++ https://github.com/evdatsion/cosmos-sdk/blob/9ae17669d6715a84c20d52e10e2232be9f467360/types/tx_msg.go#L82-L86
 
-A standard implementation of both these objects can be found in the [`auth` module](https://github.com/cosmos/cosmos-sdk/blob/master/x/auth):
+A standard implementation of both these objects can be found in the [`auth` module](https://github.com/evdatsion/cosmos-sdk/blob/master/x/auth):
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/9ae17669d6715a84c20d52e10e2232be9f467360/x/auth/tx/decoder.go
++++ https://github.com/evdatsion/cosmos-sdk/blob/9ae17669d6715a84c20d52e10e2232be9f467360/x/auth/tx/decoder.go
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/9ae17669d6715a84c20d52e10e2232be9f467360/x/auth/tx/encoder.go
++++ https://github.com/evdatsion/cosmos-sdk/blob/9ae17669d6715a84c20d52e10e2232be9f467360/x/auth/tx/encoder.go
 
 ## Next {hide}
 

@@ -8,9 +8,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/testutil"
-	"github.com/cosmos/cosmos-sdk/x/genutil/client/cli"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/testutil"
+	"github.com/evdatsion/cosmos-sdk/x/genutil/client/cli"
 )
 
 func TestGetMigrationCallback(t *testing.T) {

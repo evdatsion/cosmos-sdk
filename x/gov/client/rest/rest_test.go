@@ -5,8 +5,8 @@ package rest_test
 import (
 	"fmt"
 
-	"github.com/cosmos/cosmos-sdk/types/rest"
-	"github.com/cosmos/cosmos-sdk/x/gov/types"
+	"github.com/evdatsion/cosmos-sdk/types/rest"
+	"github.com/evdatsion/cosmos-sdk/x/gov/types"
 )
 
 func (s *IntegrationTestSuite) TestLegacyGetVote() {

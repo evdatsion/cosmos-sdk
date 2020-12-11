@@ -7,13 +7,13 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/simapp"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
-	"github.com/cosmos/cosmos-sdk/x/genutil/types"
-	stakingtypes "github.com/cosmos/cosmos-sdk/x/staking/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	"github.com/evdatsion/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/evdatsion/cosmos-sdk/simapp"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	banktypes "github.com/evdatsion/cosmos-sdk/x/bank/types"
+	"github.com/evdatsion/cosmos-sdk/x/genutil/types"
+	stakingtypes "github.com/evdatsion/cosmos-sdk/x/staking/types"
 )
 
 var (
@@ -23,7 +23,7 @@ var (
 
 func TestNetGenesisState(t *testing.T) {
 	gen := types.NewGenesisState(nil)
-	assert.NotNil(t, gen.GenTxs) // https://github.com/cosmos/cosmos-sdk/issues/5086
+	assert.NotNil(t, gen.GenTxs) // https://github.com/evdatsion/cosmos-sdk/issues/5086
 
 	gen = types.NewGenesisState(
 		[]json.RawMessage{

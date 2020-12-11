@@ -1,12 +1,12 @@
 package types_test
 
 import (
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/auth/tx"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	"github.com/cosmos/cosmos-sdk/x/ibc/light-clients/06-solomachine/types"
-	ibctmtypes "github.com/cosmos/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/x/auth/tx"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/06-solomachine/types"
+	ibctmtypes "github.com/evdatsion/cosmos-sdk/x/ibc/light-clients/07-tendermint/types"
+	ibctesting "github.com/evdatsion/cosmos-sdk/x/ibc/testing"
 )
 
 func (suite *SoloMachineTestSuite) TestCheckHeaderAndUpdateState() {

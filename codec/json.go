@@ -3,7 +3,7 @@ package codec
 import (
 	"bytes"
 
-	"github.com/cosmos/cosmos-sdk/codec/types"
+	"github.com/evdatsion/cosmos-sdk/codec/types"
 
 	"github.com/gogo/protobuf/jsonpb"
 	"github.com/gogo/protobuf/proto"

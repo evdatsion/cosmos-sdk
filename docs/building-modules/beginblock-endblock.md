@@ -28,11 +28,11 @@ It is possible for developers to defined the order of execution between the `Beg
 
 See an example implementation of `BeginBlocker` from the `distr` module:
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/f33749263f4ecc796115ad6e789cb0f7cddf9148/x/distribution/abci.go#L14-L38
++++ https://github.com/evdatsion/cosmos-sdk/blob/f33749263f4ecc796115ad6e789cb0f7cddf9148/x/distribution/abci.go#L14-L38
 
 and an example implementation of `EndBlocker` from the `staking` module:
 
-+++ https://github.com/cosmos/cosmos-sdk/blob/f33749263f4ecc796115ad6e789cb0f7cddf9148/x/staking/abci.go#L22-L27
++++ https://github.com/evdatsion/cosmos-sdk/blob/f33749263f4ecc796115ad6e789cb0f7cddf9148/x/staking/abci.go#L22-L27
 
 ## Next {hide}
 

@@ -6,13 +6,13 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/tx"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/version"
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	paramscutils "github.com/cosmos/cosmos-sdk/x/params/client/utils"
-	paramproposal "github.com/cosmos/cosmos-sdk/x/params/types/proposal"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/client/tx"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/version"
+	govtypes "github.com/evdatsion/cosmos-sdk/x/gov/types"
+	paramscutils "github.com/evdatsion/cosmos-sdk/x/params/client/utils"
+	paramproposal "github.com/evdatsion/cosmos-sdk/x/params/types/proposal"
 )
 
 // NewSubmitParamChangeProposalTxCmd returns a CLI command handler for creating

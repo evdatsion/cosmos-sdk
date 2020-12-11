@@ -7,12 +7,12 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/cosmos/cosmos-sdk/client"
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	"github.com/cosmos/cosmos-sdk/version"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/client/utils"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/client"
+	"github.com/evdatsion/cosmos-sdk/client/flags"
+	"github.com/evdatsion/cosmos-sdk/version"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/client/utils"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
 )
 
 const (
@@ -61,7 +61,7 @@ func GetCmdQueryClientStates() *cobra.Command {
 }
 
 // GetCmdQueryClientState defines the command to query the state of a client with
-// a given id as defined in https://github.com/cosmos/ics/tree/master/spec/ics-002-client-semantics#query
+// a given id as defined in https://github.com/evdatsion/ics/tree/master/spec/ics-002-client-semantics#query
 func GetCmdQueryClientState() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:     "state [client-id]",
@@ -139,7 +139,7 @@ func GetCmdQueryConsensusStates() *cobra.Command {
 }
 
 // GetCmdQueryConsensusState defines the command to query the consensus state of
-// the chain as defined in https://github.com/cosmos/ics/tree/master/spec/ics-002-client-semantics#query
+// the chain as defined in https://github.com/evdatsion/ics/tree/master/spec/ics-002-client-semantics#query
 func GetCmdQueryConsensusState() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "consensus-state [client-id] [height]",

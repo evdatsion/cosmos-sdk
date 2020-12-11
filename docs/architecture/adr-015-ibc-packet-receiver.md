@@ -6,7 +6,7 @@
 
 ## Context
  
-[ICS 26 - Routing Module](https://github.com/cosmos/ics/tree/master/spec/ics-026-routing-module) defines a function [`handlePacketRecv`](https://github.com/cosmos/ics/tree/master/spec/ics-026-routing-module#packet-relay).
+[ICS 26 - Routing Module](https://github.com/evdatsion/ics/tree/master/spec/ics-026-routing-module) defines a function [`handlePacketRecv`](https://github.com/evdatsion/ics/tree/master/spec/ics-026-routing-module#packet-relay).
 
 In ICS 26, the routing module is defined as a layer above each application module
 which verifies and routes messages to the destination modules. It is possible to
@@ -295,5 +295,5 @@ Proposed
 
 ## References
 
-- Relevant comment: [cosmos/ics#289](https://github.com/cosmos/ics/issues/289#issuecomment-544533583)
-- [ICS26 - Routing Module](https://github.com/cosmos/ics/blob/master/spec/ics-026-routing-module)
+- Relevant comment: [cosmos/ics#289](https://github.com/evdatsion/ics/issues/289#issuecomment-544533583)
+- [ICS26 - Routing Module](https://github.com/evdatsion/ics/blob/master/spec/ics-026-routing-module)

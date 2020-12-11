@@ -5,12 +5,12 @@ import (
 
 	"github.com/stretchr/testify/suite"
 
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
-	ibctesting "github.com/cosmos/cosmos-sdk/x/ibc/testing"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/types"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	channeltypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
+	ibctesting "github.com/evdatsion/cosmos-sdk/x/ibc/testing"
 )
 
 type TransferTestSuite struct {

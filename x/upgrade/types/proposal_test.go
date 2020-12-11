@@ -6,9 +6,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	gov "github.com/cosmos/cosmos-sdk/x/gov/types"
-	"github.com/cosmos/cosmos-sdk/x/upgrade/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	gov "github.com/evdatsion/cosmos-sdk/x/gov/types"
+	"github.com/evdatsion/cosmos-sdk/x/upgrade/types"
 )
 
 type ProposalWrapper struct {

@@ -8,8 +8,8 @@ import (
 	tmstrings "github.com/tendermint/tendermint/libs/strings"
 	dbm "github.com/tendermint/tm-db"
 
-	snapshottypes "github.com/cosmos/cosmos-sdk/snapshots/types"
-	"github.com/cosmos/cosmos-sdk/types/kv"
+	snapshottypes "github.com/evdatsion/cosmos-sdk/snapshots/types"
+	"github.com/evdatsion/cosmos-sdk/types/kv"
 )
 
 type Store interface {
@@ -316,7 +316,7 @@ type StoreKey interface {
 }
 
 // CapabilityKey represent the Cosmos SDK keys for object-capability
-// generation in the IBC protocol as defined in https://github.com/cosmos/ics/tree/master/spec/ics-005-port-allocation#data-structures
+// generation in the IBC protocol as defined in https://github.com/evdatsion/ics/tree/master/spec/ics-005-port-allocation#data-structures
 type CapabilityKey StoreKey
 
 // KVStoreKey is used for accessing substores.

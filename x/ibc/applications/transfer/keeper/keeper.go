@@ -4,17 +4,17 @@ import (
 	tmbytes "github.com/tendermint/tendermint/libs/bytes"
 	"github.com/tendermint/tendermint/libs/log"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	"github.com/cosmos/cosmos-sdk/store/prefix"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
-	authtypes "github.com/cosmos/cosmos-sdk/x/auth/types"
-	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
-	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
-	channeltypes "github.com/cosmos/cosmos-sdk/x/ibc/core/04-channel/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	"github.com/evdatsion/cosmos-sdk/store/prefix"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
+	authtypes "github.com/evdatsion/cosmos-sdk/x/auth/types"
+	capabilitykeeper "github.com/evdatsion/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/evdatsion/cosmos-sdk/x/capability/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/types"
+	channeltypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/04-channel/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
+	paramtypes "github.com/evdatsion/cosmos-sdk/x/params/types"
 )
 
 // Keeper defines the IBC fungible transfer keeper

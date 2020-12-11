@@ -12,19 +12,19 @@ import (
 	"strings"
 
 	"github.com/99designs/keyring"
-	bip39 "github.com/cosmos/go-bip39"
+	bip39 "github.com/evdatsion/go-bip39"
 	"github.com/pkg/errors"
 	"github.com/tendermint/crypto/bcrypt"
 	tmcrypto "github.com/tendermint/tendermint/crypto"
 
-	"github.com/cosmos/cosmos-sdk/client/input"
-	"github.com/cosmos/cosmos-sdk/codec/legacy"
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/ledger"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
+	"github.com/evdatsion/cosmos-sdk/client/input"
+	"github.com/evdatsion/cosmos-sdk/codec/legacy"
+	"github.com/evdatsion/cosmos-sdk/crypto"
+	"github.com/evdatsion/cosmos-sdk/crypto/hd"
+	"github.com/evdatsion/cosmos-sdk/crypto/ledger"
+	"github.com/evdatsion/cosmos-sdk/crypto/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	sdkerrors "github.com/evdatsion/cosmos-sdk/types/errors"
 )
 
 // Backend options for Keyring

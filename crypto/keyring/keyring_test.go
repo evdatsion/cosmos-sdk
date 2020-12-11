@@ -7,16 +7,16 @@ import (
 	"testing"
 
 	"github.com/99designs/keyring"
-	bip39 "github.com/cosmos/go-bip39"
+	bip39 "github.com/evdatsion/go-bip39"
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto"
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/multisig"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	"github.com/cosmos/cosmos-sdk/crypto/types"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/crypto"
+	"github.com/evdatsion/cosmos-sdk/crypto/hd"
+	"github.com/evdatsion/cosmos-sdk/crypto/keys/ed25519"
+	"github.com/evdatsion/cosmos-sdk/crypto/keys/multisig"
+	"github.com/evdatsion/cosmos-sdk/crypto/keys/secp256k1"
+	"github.com/evdatsion/cosmos-sdk/crypto/types"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
 )
 
 const (

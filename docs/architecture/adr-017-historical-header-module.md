@@ -7,7 +7,7 @@
 
 ## Context
 
-In order for the Cosmos SDK to implement the [IBC specification](https://github.com/cosmos/ics), modules within the SDK must have the ability to introspect recent consensus states (validator sets & commitment roots) as proofs of these values on other chains must be checked during the handshakes.
+In order for the Cosmos SDK to implement the [IBC specification](https://github.com/evdatsion/ics), modules within the SDK must have the ability to introspect recent consensus states (validator sets & commitment roots) as proofs of these values on other chains must be checked during the handshakes.
 
 ## Decision
 
@@ -58,4 +58,4 @@ Implementation of this ADR will require changes to the Cosmos SDK. It will not r
 
 ## References
 
-- [ICS 2: "Consensus state introspection"](https://github.com/cosmos/ics/tree/master/spec/ics-024-host-requirements#consensus-state-introspection)
+- [ICS 2: "Consensus state introspection"](https://github.com/evdatsion/ics/tree/master/spec/ics-024-host-requirements#consensus-state-introspection)

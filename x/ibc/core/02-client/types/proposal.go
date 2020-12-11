@@ -1,9 +1,9 @@
 package types
 
 import (
-	govtypes "github.com/cosmos/cosmos-sdk/x/gov/types"
-	host "github.com/cosmos/cosmos-sdk/x/ibc/core/24-host"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	govtypes "github.com/evdatsion/cosmos-sdk/x/gov/types"
+	host "github.com/evdatsion/cosmos-sdk/x/ibc/core/24-host"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
 )
 
 const (

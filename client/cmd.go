@@ -10,8 +10,8 @@ import (
 	"github.com/tendermint/tendermint/libs/cli"
 	rpchttp "github.com/tendermint/tendermint/rpc/client/http"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/client/flags"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
 )
 
 // ClientContextKey defines the context key used to retrieve a client.Context from

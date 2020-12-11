@@ -7,7 +7,7 @@ order: 3
 Learn how to configure your application to use IBC and send data packets to other chains. {synopsis}
 
 This document serves as a guide for developers who want to write their own Inter-blockchain
-Communication Protocol (IBC) applications for custom [use-cases](https://github.com/cosmos/ics/blob/master/ibc/4_IBC_USECASES.md).
+Communication Protocol (IBC) applications for custom [use-cases](https://github.com/evdatsion/ics/blob/master/ibc/4_IBC_USECASES.md).
 
 Due to the modular design of the IBC protocol, IBC
 application developers do not need to concern themselves with the low-level details of clients,
@@ -31,7 +31,7 @@ module correctly.
 ### Implement `IBCModule` Interface and callbacks
 
 The Cosmos SDK expects all IBC modules to implement the [`IBCModule`
-interface](https://github.com/cosmos/cosmos-sdk/tree/master/x/ibc/core/05-port/types/module.go). This
+interface](https://github.com/evdatsion/cosmos-sdk/tree/master/x/ibc/core/05-port/types/module.go). This
 interface contains all of the callbacks IBC expects modules to implement. This section will describe
 the callbacks that are called during channel handshake execution.
 
@@ -199,7 +199,7 @@ channel, as well as how they will encode/decode it. This process is not specifie
 to each application module to determine how to implement this agreement. However, for most
 applications this will happen as a version negotiation during the channel handshake. While more
 complex version negotiation is possible to implement inside the channel opening handshake, a very
-simple version negotation is implemented in the [ibc-transfer module](https://github.com/cosmos/cosmos-sdk/tree/master/x/ibc-transfer/module.go).
+simple version negotation is implemented in the [ibc-transfer module](https://github.com/evdatsion/cosmos-sdk/tree/master/x/ibc-transfer/module.go).
 
 Thus, a module must define its a custom packet data structure, along with a well-defined way to
 encode and decode it to and from `[]byte`.
@@ -326,7 +326,7 @@ not want the packet processing to revert. Instead, we may want to encode this fa
 acknowledgement and finish processing the packet. This will ensure the packet cannot be replayed,
 and will also allow the sender module to potentially remediate the situation upon receiving the
 acknowledgement. An example of this technique is in the `ibc-transfer` module's
-[`OnRecvPacket`](https://github.com/cosmos/cosmos-sdk/tree/master/x/ibc-transfer/module.go).
+[`OnRecvPacket`](https://github.com/evdatsion/cosmos-sdk/tree/master/x/ibc-transfer/module.go).
 :::
 
 ### Acknowledgements
@@ -340,9 +340,9 @@ receive acknowledegments with the IBC modules as byte strings.
 
 Thus, modules must agree on how to encode/decode acknowledgements. The process of creating an
 acknowledgement struct along with encoding and decoding it, is very similar to the packet data
-example above. [ICS 04](https://github.com/cosmos/ics/tree/master/spec/ics-004-channel-and-packet-semantics#acknowledgement-envelope)
+example above. [ICS 04](https://github.com/evdatsion/ics/tree/master/spec/ics-004-channel-and-packet-semantics#acknowledgement-envelope)
 specifies a recommended format for acknowledgements. This acknowledgement type can be imported from
-[channel types](https://github.com/cosmos/cosmos-sdk/tree/master/x/ibc/core/04-channel/types).
+[channel types](https://github.com/evdatsion/cosmos-sdk/tree/master/x/ibc/core/04-channel/types).
 
 #### Acknowledging Packets
 
@@ -420,13 +420,13 @@ which implements everything discussed above.
 Here are the useful parts of the module to look at:
 
 [Binding to transfer
-port](https://github.com/cosmos/cosmos-sdk/blob/master/x/ibc-transfer/genesis.go)
+port](https://github.com/evdatsion/cosmos-sdk/blob/master/x/ibc-transfer/genesis.go)
 
 [Sending transfer
-packets](https://github.com/cosmos/cosmos-sdk/blob/master/x/ibc-transfer/keeper/relay.go)
+packets](https://github.com/evdatsion/cosmos-sdk/blob/master/x/ibc-transfer/keeper/relay.go)
 
 [Implementing IBC
-callbacks](https://github.com/cosmos/cosmos-sdk/blob/master/x/ibc-transfer/module.go)
+callbacks](https://github.com/evdatsion/cosmos-sdk/blob/master/x/ibc-transfer/module.go)
 
 ## Next {hide}
 

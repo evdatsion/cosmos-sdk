@@ -6,9 +6,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/crypto/hd"
-	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
-	sdk "github.com/cosmos/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/crypto/hd"
+	"github.com/evdatsion/cosmos-sdk/crypto/keys/secp256k1"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
 )
 
 func Test_writeReadLedgerInfo(t *testing.T) {

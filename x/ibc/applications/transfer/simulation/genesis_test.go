@@ -7,12 +7,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cosmos/cosmos-sdk/codec"
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/types/module"
-	simtypes "github.com/cosmos/cosmos-sdk/types/simulation"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/simulation"
-	"github.com/cosmos/cosmos-sdk/x/ibc/applications/transfer/types"
+	"github.com/evdatsion/cosmos-sdk/codec"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	"github.com/evdatsion/cosmos-sdk/types/module"
+	simtypes "github.com/evdatsion/cosmos-sdk/types/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/simulation"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/applications/transfer/types"
 )
 
 // TestRandomizedGenState tests the normal scenario of applying RandomizedGenState.

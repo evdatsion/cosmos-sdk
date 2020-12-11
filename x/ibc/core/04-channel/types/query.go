@@ -1,9 +1,9 @@
 package types
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	clienttypes "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	clienttypes "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
 )
 
 // NewQueryChannelResponse creates a new QueryChannelResponse instance

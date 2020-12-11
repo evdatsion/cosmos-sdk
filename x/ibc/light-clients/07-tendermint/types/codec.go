@@ -1,8 +1,8 @@
 package types
 
 import (
-	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
-	"github.com/cosmos/cosmos-sdk/x/ibc/core/exported"
+	codectypes "github.com/evdatsion/cosmos-sdk/codec/types"
+	"github.com/evdatsion/cosmos-sdk/x/ibc/core/exported"
 )
 
 // RegisterInterfaces registers the tendermint concrete client-related

@@ -9,11 +9,11 @@ import (
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/cosmos/cosmos-sdk/client/flags"
-	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"
-	"github.com/cosmos/cosmos-sdk/testutil/network"
-	sdk "github.com/cosmos/cosmos-sdk/types"
-	"github.com/cosmos/cosmos-sdk/x/crisis/client/cli"
+	"github.com/evdatsion/cosmos-sdk/client/flags"
+	clitestutil "github.com/evdatsion/cosmos-sdk/testutil/cli"
+	"github.com/evdatsion/cosmos-sdk/testutil/network"
+	sdk "github.com/evdatsion/cosmos-sdk/types"
+	"github.com/evdatsion/cosmos-sdk/x/crisis/client/cli"
 )
 
 type IntegrationTestSuite struct {

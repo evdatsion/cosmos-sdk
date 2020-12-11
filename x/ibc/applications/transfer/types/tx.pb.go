@@ -6,8 +6,8 @@ package types
 import (
 	context "context"
 	fmt "fmt"
-	types "github.com/cosmos/cosmos-sdk/types"
-	types1 "github.com/cosmos/cosmos-sdk/x/ibc/core/02-client/types"
+	types "github.com/evdatsion/cosmos-sdk/types"
+	types1 "github.com/evdatsion/cosmos-sdk/x/ibc/core/02-client/types"
 	_ "github.com/gogo/protobuf/gogoproto"
 	grpc1 "github.com/gogo/protobuf/grpc"
 	proto "github.com/gogo/protobuf/proto"
@@ -32,7 +32,7 @@ const _ = proto.GoGoProtoPackageIsVersion3 // please upgrade the proto package
 
 // MsgTransfer defines a msg to transfer fungible tokens (i.e Coins) between
 // ICS20 enabled chains. See ICS Spec here:
-// https://github.com/cosmos/ics/tree/master/spec/ics-020-fungible-token-transfer#data-structures
+// https://github.com/evdatsion/ics/tree/master/spec/ics-020-fungible-token-transfer#data-structures
 type MsgTransfer struct {
 	// the port on which the packet will be sent
 	SourcePort string `protobuf:"bytes,1,opt,name=source_port,json=sourcePort,proto3" json:"source_port,omitempty" yaml:"source_port"`
